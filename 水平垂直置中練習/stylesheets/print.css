@@ -1,0 +1,135 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/print.scss */
+div {
+  height: 200px;
+  box-shadow: 0 0 0 1px blue;
+}
+/* line 8, ../sass/print.scss */
+div div {
+  box-shadow: 0 0 0 1px red;
+}
+
+/* line 12, ../sass/print.scss */
+p {
+  margin: 0;
+}
+
+/* line 15, ../sass/print.scss */
+.marginBottom {
+  margin-bottom: 100px;
+}
+
+/* line 18, ../sass/print.scss */
+.block {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 23, ../sass/print.scss */
+.inline {
+  display: inline;
+}
+
+/* line 26, ../sass/print.scss */
+.inline-block {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 31, ../sass/print.scss */
+.auto {
+  height: auto;
+}
+
+/* line 37, ../sass/print.scss */
+.div2 {
+  text-align: center;
+}
+/* line 39, ../sass/print.scss */
+.div2::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 45, ../sass/print.scss */
+.div2 div {
+  height: auto;
+}
+/* line 48, ../sass/print.scss */
+.div2 .hw {
+  width: 100px;
+  height: 100px;
+}
+/* line 52, ../sass/print.scss */
+.div2 .middle {
+  vertical-align: middle;
+}
+/* line 55, ../sass/print.scss */
+.div2 .top {
+  vertical-align: top;
+}
+/* line 58, ../sass/print.scss */
+.div2 .bottom {
+  vertical-align: bottom;
+}
+
+/* line 66, ../sass/print.scss */
+.div1 {
+  text-align: center;
+}
+
+/* line 70, ../sass/print.scss */
+.div3 {
+  position: relative;
+}
+/* line 72, ../sass/print.scss */
+.div3 div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 85, ../sass/print.scss */
+.div4 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 87, ../sass/print.scss */
+.div4 div {
+  height: auto;
+  line-height: 200px;
+}
+
+/* line 93, ../sass/print.scss */
+.div4Bottom {
+  margin-bottom: 300px;
+}
+
+/* line 99, ../sass/print.scss */
+.div5 div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 106, ../sass/print.scss */
+.div6 {
+  text-align: center;
+}
+/* line 108, ../sass/print.scss */
+.div6 div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 113, ../sass/print.scss */
+.div6 .block {
+  margin: 0 auto;
+}

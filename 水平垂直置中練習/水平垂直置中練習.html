@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/print.css">
+  </head>
+  <body>
+    <h2>水平置中</h2>
+    <h3>Block用margin左右auto</h3>
+    <p>margin-left: auto;<br>margin-right: auto;</p>
+    <div class="div5 marginBottom">
+      <div class="block">block</div>
+      <div class="inline">inline</div>
+      <div class="inline-block">inline-block</div>
+    </div>
+
+
+    <h3>inline, inline-block的父階層用text-align center</h3>
+    <p>text-align center可以使inline & inline-block元素水平置中</p>
+    <div class="div1 marginBottom">
+      <!-- <div class="block">block</div> -->
+      <div class="inline">inline</div>
+      <div class="inline-block">inline-block</div>
+    </div>
+
+
+    <h2>垂直置中</h2>
+    <h3>偽元素</h3>
+    <p>
+      偽元素垂直置中都可用在inline ＆ inline-block<br>
+      適用: inline-block(設不設定高都可), block(設定高)
+    </p>
+    <div class="div2 marginBottom">
+      <!-- <div class="block">block</div> -->
+      <div class="inline">inline</div>
+      <div class="inline-block">inline-block</div>
+      <div class="inline-block">我是多行文<br>我貼著baseline<br>往上加</div>
+      <div class="inline-block hw">我高100px<br>但還是對齊baseline</div>
+      <div class="inline-block hw middle">我高100px<br>設middle<br>格子中間對準中線</div>
+      <div class="inline-block middle">middle<br>middle<br>middle</div>
+      <div class="inline-block top">top<br>top<br>top</div>
+      <div class="inline-block bottom">bottom<br>bottom<br>bottom</div>
+    </div>
+
+    <div class="div2 marginBottom">
+      <div class="inline">inline多行會失敗<br>inline多行會失敗<br>inline多行會失敗</div>
+    </div>
+
+
+    <h3>abosolute margin:auto 上下左右為0</h3>
+    <p>
+      適用:<br>
+      inline-block(不可以沒有高，可以設固定寬高，fit-content, min-content, max-content)<br>
+      block(設定寬高)<br>
+      因為是abosolute，所以各個元素會被覆蓋<br>
+      inline這裡會被設為inline-block, 範圍會撐到父元素，但字元留在左上角
+    </p>
+    <div class="div3 marginBottom">
+      <div class="block">block</div>
+      <div class="inline">inline</div>
+      <div class="inline-block">inline-block</div>
+      <!-- <div class="inline-block auto">inline-block<br>height auto</div> -->
+    </div>
+
+    <h3>line-height</h3>
+    <p>
+      line-height:200px<br>
+      inline-block不能設高，height要設auto;<br>
+      文字多行會失敗
+    </p>
+    <div class="div4">
+      <!-- <div class="block">block</div> -->
+      <div class="inline">inline</div>
+      <div class="inline-block">inline-block</div>
+    </div>
+
+    <div class="div4 div4Bottom">
+      <div class="inline-block">多行會失敗<br>多行會失敗</div>
+    </div>
+
+
+    <h3>transform:translateY(-50%);</h3>
+    <p>
+      適用:<br>
+      全部<br>
+      inline-block(height要設高, auto, 固定數值, fit-content, min-content, max-content都可)<br>
+      position: relative;<br>
+      top:50%;<br>
+      transform:translateY(-50%);<br>
+    </p>
+    <div class="div6 marginBottom">
+      <div class="inline">inline</div>
+    </div>
+    <div class="div6 marginBottom">
+      <div class="block">block</div>
+    </div>
+    <div class="div6 marginBottom">
+      <div class="inline-block">inline-block</div>
+    </div>
+    <div class="div6 marginBottom">
+      <div class="inline-block auto">inline-block<br>height auto</div>
+    </div>
+
+
+<h4>另有flex, calc(), table的做法這裡不討論</h4>
+
+  </body>
+</html>

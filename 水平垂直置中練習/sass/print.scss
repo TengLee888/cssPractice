@@ -1,0 +1,116 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+// @import "main";
+div {
+  height:200px;
+  box-shadow: 0 0 0 1px blue;
+  div {
+    box-shadow: 0 0 0 1px red;
+  }
+}
+p {
+  margin: 0;
+}
+.marginBottom {
+  margin-bottom:100px;
+}
+.block {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.auto {
+  height: auto;
+}
+
+
+
+.div2 {
+  text-align: center;
+  &::before {
+  content: '';
+  display:inline-block;
+  height: 100%;
+  vertical-align: middle;
+  }
+  div {
+    height: auto;
+  }
+  .hw {
+    width: 100px;
+    height: 100px;
+  }
+  .middle {
+    vertical-align: middle;
+  }
+  .top {
+    vertical-align: top;
+  }
+  .bottom {
+    vertical-align: bottom;
+  }
+}
+
+
+
+
+.div1 {
+  text-align: center;
+}
+
+.div3 {
+  position: relative;
+  div {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+  }
+}
+
+
+
+
+.div4 {
+  text-align: center;
+  div {
+    height: auto;
+    line-height:200px;
+  }
+  margin-bottom: 50px;
+}
+.div4Bottom {
+  margin-bottom: 300px;
+}
+
+
+.div5 {
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.div6 {
+  text-align: center;
+  div {
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  .block {
+    margin: 0 auto;
+  }
+}
